@@ -14,6 +14,8 @@ Este é um guia turístico online para o estado do Maranhão, Brasil, que permit
 - Visualização de detalhes dos destinos, incluindo fotos, descrições e atrativos
 - Mapa interativo mostrando a localização dos destinos
 - Segurança dos dados dos usuários
+![cidades](https://github.com/user-attachments/assets/2c210e7d-42aa-421c-b3df-5618025afb7f)
+![cidades2](https://github.com/user-attachments/assets/b7dfbae7-95de-46a6-b47a-c8aa497432e1)
 
 ## Tecnologias Utilizadas
 
