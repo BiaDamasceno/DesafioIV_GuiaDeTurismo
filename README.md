@@ -4,7 +4,7 @@
 
 # Guia de Turismo Maranhão
 
-<img src="![telaInicial](https://github.com/user-attachments/assets/3c69a8cd-646c-485c-88c1-d2e3acdff793)" width="0px" />
+![telaInicial](https://github.com/user-attachments/assets/3c69a8cd-646c-485c-88c1-d2e3acdff793)
 
 Este é um guia turístico online para o estado do Maranhão, Brasil, que permite aos visitantes explorar os destinos mais populares, como São Luís, Lençóis Maranhenses, Alcântara, Carolina, Chapada das Mesas, Atins e Delta do Parnaíba.
 
