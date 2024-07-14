@@ -5,6 +5,8 @@
 # Guia de Turismo Maranhão
 
 ![telaInicial](https://github.com/user-attachments/assets/3c69a8cd-646c-485c-88c1-d2e3acdff793)
+
+![animacao](https://github.com/user-attachments/assets/48b23e6a-b93c-4b6c-ab76-481d63c44b35)
 Video da aplicação: ![Click aqui!](https://github.com/user-attachments/assets/0652d155-91ac-47e0-93e7-ae12f030ab97)
 
 
