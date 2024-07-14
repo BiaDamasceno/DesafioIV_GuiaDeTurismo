@@ -181,6 +181,10 @@ INSERT INTO attractions (destination_id, name, type, description, image_path, la
 (6, 'Praia de Atins', 'Praia', 'Praia tranquila e bonita na vila de Atins.', 'images/praia_atins.jpg', -2.459850, -42.782860),
 (7, 'Ilha das Canárias', 'Ilha', 'Uma das ilhas mais visitadas do Delta do Parnaíba.', 'images/ilha_canarias.jpg', -2.863540, -41.705740);
 
+![WhatsApp Image 2024-07-14 at 19 59 14](https://github.com/user-attachments/assets/7c12705a-5486-4dd6-9caa-9e2dbacd8280)
+![WhatsApp Image 2024-07-14 at 19 58 50](https://github.com/user-attachments/assets/82933311-71c6-439f-96f8-b961fc786a5d)
+
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
