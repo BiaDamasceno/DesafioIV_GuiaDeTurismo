@@ -125,6 +125,52 @@ Abra o navegador e vá para http://127.0.0.1:5500 para acessar o frontend. O bac
 4. Push para a branch (git push origin feature/nova-feature)
 5. Crie um novo Pull Request
 
+## Comando SQL
+
+sql
+-- Criar a tabela 'destinations'
+CREATE TABLE destinations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    image_path VARCHAR(255),
+    latitude DECIMAL(9, 6),
+    longitude DECIMAL(9, 6)
+);
+
+-- Criar a tabela 'attractions'
+CREATE TABLE attractions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    destination_id INT,
+    name VARCHAR(255) NOT NULL,
+    type VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    image_path VARCHAR(255),
+    latitude DECIMAL(9, 6),
+    longitude DECIMAL(9, 6),
+    FOREIGN KEY (destination_id) REFERENCES destinations(id) ON DELETE CASCADE
+);
+
+-- Inserir dados na tabela 'destinations'
+INSERT INTO destinations (name, description, image_path, latitude, longitude) VALUES
+('São Luís', 'Capital do Maranhão, conhecida por seu centro histórico e cultura rica.', 'images/sao_luis.jpg', -2.530730, -44.306800),
+('Lençóis Maranhenses', 'Parque Nacional famoso por suas dunas de areia branca e lagoas de água doce.', 'images/lencois_maranhenses.jpg', -2.482790, -43.124020),
+('Alcântara', 'Cidade histórica conhecida por sua arquitetura colonial e ruínas.', 'images/alcantara.jpg', -2.409420, -44.406400),
+('Carolina', 'Porta de entrada para o Parque Nacional da Chapada das Mesas.', NULL, -7.335000, -47.470600),
+('Chapada das Mesas', 'Parque Nacional famoso por suas formações rochosas e cachoeiras.', NULL, -7.037500, -46.615800),
+('Atins', 'Pequena vila de pescadores, porta de entrada para os Lençóis Maranhenses.', NULL, -2.453060, -42.778200),
+('Delta do Parnaíba', 'Área de proteção ambiental com ilhas, manguezais e vida selvagem.', NULL, -2.863410, -41.708500);
+
+-- Inserir dados na tabela 'attractions'
+INSERT INTO attractions (destination_id, name, type, description, image_path, latitude, longitude) VALUES
+(1, 'Centro Histórico de São Luís', 'Monumento', 'Patrimônio Mundial da UNESCO com arquitetura colonial.', 'images/centro_historico_sao_luis.jpg', -2.531980, -44.302750),
+(2, 'Lagoa Azul', 'Lagoa', 'Uma das lagoas mais belas dos Lençóis Maranhenses.', 'images/lagoa_azul.jpg', -2.531450, -43.155560),
+(3, 'Ruínas de Alcântara', 'Monumento', 'Ruínas de igrejas e construções coloniais.', 'images/ruinas_alcantara.jpg', -2.409160, -44.406800),
+(4, 'Cachoeira da Pedra Caída', 'Cachoeira', 'Impressionante cachoeira na Chapada das Mesas.', 'images/cachoeira_pedra_caida.jpg', -7.192860, -47.278000),
+(5, 'Formação Pedra Furada', 'Formação Rochosa', 'Famosa formação rochosa na Chapada das Mesas.', 'images/pedra_furada.jpg', -7.027210, -46.614610),
+(6, 'Praia de Atins', 'Praia', 'Praia tranquila e bonita na vila de Atins.', 'images/praia_atins.jpg', -2.459850, -42.782860),
+(7, 'Ilha das Canárias', 'Ilha', 'Uma das ilhas mais visitadas do Delta do Parnaíba.', 'images/ilha_canarias.jpg', -2.863540, -41.705740);
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
