@@ -58,6 +58,8 @@ maranhao-tour-guide/
 ├── package.json
 └── README.md
 
+![pontosTuristicos](https://github.com/user-attachments/assets/9f9e1d1e-fb2d-4a23-b888-414b4b3a9c92)
+![pontosTuristicos1](https://github.com/user-attachments/assets/b532069b-efe8-43f1-9fd9-d412c280a0e1)
 
 ## Pré-requisitos
 
